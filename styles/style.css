@@ -1,0 +1,59 @@
+/* Importing Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Clearing the default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common styles */
+body{
+    max-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+.header-btn{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(150, 242, 233), rgb(95, 247, 231));
+    padding: 16px 25px;
+    border-radius: 5px;
+}
+
+/* Header section styles */
+.top-header-container{
+    width: 80vw;
+    margin: 15vh auto;
+    padding-top: 33px;
+    background-color: #161616;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6em;
+}
+.top-header-container img{
+    width: 40%;
+}
+.top-header-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.top-header-content h1{
+    font-weight: 700;
+    font-size: 3em;
+}
+.top-header-content p{
+    font-size: 1em;
+    color: #ffffffd5;
+}
+.fa-angles-right{
+    padding-left: 10px;
+}
