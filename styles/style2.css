@@ -114,10 +114,6 @@ main {
     padding: 13px 0;
 }
 
-#active-club-page {
-    background: linear-gradient(to right, rgb(150, 242, 233), rgb(95, 247, 231));
-}
-
 /* Article section */
 .article-container {
     display: grid;
