@@ -116,6 +116,7 @@ main {
 
 #active-club-page {
     background: linear-gradient(to right, rgb(150, 242, 233), rgb(95, 247, 231));
+    border-radius: 10px;
 }
 
 /* Article section */
