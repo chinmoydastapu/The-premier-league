@@ -132,6 +132,20 @@ main {
     background-color: rgba(0, 255, 115, 0.173);
 }
 
+/* Hover animation on cards starts here */
+.hover-zoom {
+    overflow: hidden;
+}
+
+.hover-zoom img {
+    transition: transform 1s ease;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.5);
+}
+/* Hover animation on cards ends here */
+
 .blog-img img {
     display: block;
     width: 100%;
