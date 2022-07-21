@@ -26,6 +26,13 @@ body {
     border-radius: 5px;
 }
 
+.header-ellipsis {
+    width: 18em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .ellipsis-text {
     width: 10em;
     white-space: nowrap;
