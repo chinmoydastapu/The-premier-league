@@ -24,6 +24,21 @@ body {
     background: linear-gradient(to right, rgb(150, 242, 233), rgb(95, 247, 231));
     padding: 12px 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 10px rgb(150, 242, 233);
+    transition: transform 0.5s ease;
+}
+
+.header-btn:hover {
+    transform: scale(1.1);
+}
+
+.fa-angles-right {
+    padding-left: 10px;
+    transition: transform 0.5s ease;
+}
+
+.header-btn:hover .fa-angles-right{
+    transform: translateX(1em);
 }
 
 .header-ellipsis {
@@ -124,6 +139,11 @@ main {
 #active-schedule-page {
     background: linear-gradient(to right, rgb(150, 242, 233), rgb(95, 247, 231));
     border-radius: 10px;
+}
+
+#active-schedule-page:hover {
+    box-shadow: 0 2px 10px rgb(150, 242, 233);
+    background: linear-gradient(to left, rgb(150, 242, 233), rgb(95, 247, 231));
 }
 
 /* Article section */
