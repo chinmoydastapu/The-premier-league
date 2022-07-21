@@ -144,6 +144,7 @@ main {
 .hover-zoom:hover img {
     transform: scale(1.5);
 }
+
 /* Hover animation on cards ends here */
 
 .blog-img img {
@@ -167,7 +168,7 @@ main {
 }
 
 .blog-title {
-    font-size: 1.2vw;
+    font-size: 1em;
 }
 
 .blog-title a {
@@ -240,4 +241,51 @@ footer .footer-links,
 
 .fa-brands {
     font-size: 1.5em;
+}
+
+/* Mobile device Media Query */
+@media screen and (max-width: 576px) {
+
+    /* For header */
+    .top-header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For the main blog and aside nav bar */
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For aside nav bar to show columnwise */
+    .nav-container {
+        background-color: unset;
+        margin: 0 auto;
+    }
+
+    .nav-content {
+        width: fit-content;
+        border: 1px solid rgba(172, 172, 172, 0.551);
+        margin: 0 auto;
+    }
+
+    .nav-content a {
+        padding: 12px 20px;
+    }
+
+    /* For the main blog content to show 
+    one column along cross axis */
+    .article-container {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50vw;
+        gap: 1em;
+    }
+
+    /* For the footer section */
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
 }
