@@ -188,6 +188,10 @@ main {
     gap: 1em;
 }
 
+.view-all {
+    display: none;
+}
+
 /* Main section ends here */
 
 
@@ -218,6 +222,8 @@ footer .footer-links,
 }
 
 .footer-links {
+    width: 80vw;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 2em;
@@ -243,7 +249,7 @@ footer .footer-links,
     font-size: 1.5em;
 }
 
-/* Mobile device Media Query */
+/*  Media Query for Mobile devices */
 @media screen and (max-width: 576px) {
 
     /* For header */
@@ -287,5 +293,92 @@ footer .footer-links,
     .footer-links {
         display: flex;
         flex-direction: column;
+    }
+}
+
+/* Media Query for Tab devices */
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+    /* For Header */
+    .top-header-container {
+        width: 90vw;
+    }
+
+    /* For the main blog and aside nav bar */
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    /* For the aside nav bar to show row-wise */
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container {
+        width: 90vw;
+        background-color: unset;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2em;
+        flex-direction: row;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: content;
+    }
+
+    .nav-content {
+        border: 1px solid rgba(172, 172, 172, 0.551);
+        margin: 0 auto;
+        width: 30%;
+        height: fit-content;
+    }
+
+    /* For the main blog content to show 
+    two column along cross axis */
+    .article-container {
+        width: 90vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .blog-card:nth-child(7) {
+        display: none;
+    }
+
+    .blog-card:nth-child(8) {
+        display: none;
+    }
+
+    .blog-card:nth-child(9) {
+        display: none;
+    }
+
+    /* View all section */
+    .view-all {
+        display: block;
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    .view-all a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 2vw;
+    }
+
+    /* For the footer section */
+    .footer-links {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
